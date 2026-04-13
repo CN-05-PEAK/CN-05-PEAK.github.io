@@ -1,0 +1,328 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thato Ntlati | Portfolio</title>
+        <link rel ="stylesheet" href ="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <!-- <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css"> -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script src="https://kit.fontawesome.com/c676e092c5.js" crossorigin="anonymous"></script>
+
+        
+    </head>
+    <body>
+        <div id ="header">
+            <div class="container">
+                <nav>
+                    <a href="#"><img src="images/logo1.png" class="logo" alt="Thatos' Story Logo" ></a>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home </a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services </a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class ="fa-solid fa-xmark close-icon" onclick="closemenu()"></i>
+
+                    </ul>
+                    <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Aspiring Data Scientist</p>
+                    <h1>Hello World,<br> I'm<span> Thato Ntlati</span> <br> From South Africa</h1>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!------------ About Section ----------------->
+        <div id="about">
+            <div class="container">
+                <div class ="row">
+                    <div class="about-col-1">
+                        <img src="images/port.png" alt="About Thato Ntlati">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello! I'm Thato Ntlati, a passionate Data Scientist from South Africa. With a
+                            strong background in data analysis and machine learning, I love transforming raw 
+                            data into meaningful insights that drive decision-making. My journey in data science has
+                            equipped me with skills in Python, R, SQL, and various data visualization tools.
+                            When I'm not crunching numbers, I enjoy hiking and exploring the beautiful landscapes of South Africa.
+                        </p>
+                        
+                        <div class = "tab-titles">
+                            <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class = "tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class = "tab-contents active-tab" id = "skills">
+                            <ul>
+                                <li><span>C#</span><br>Programming Language</li>
+                                <li><span>Python</span><br>Programming Language</li>                                                                
+                                <li><span>R</span><br>Statistical Computing</li>
+                                
+                                <li><span>SQL</span><br>Database Querying</li>
+                                <li><span>Machine Learning</span><br>Building Predictive Models</li>
+                                <li><span>Data Visualization</span><br>Creating Visual Data Stories</li>
+                            </ul>
+                        </div>
+
+                        <div class = "tab-contents" id = "experience">
+                            <ul>
+                                <li><span>Computer Lab Assistant - University of Free State</span><br>Feb 2025 - November 2025</li>
+                                <li><span>Computer Hardware Demonstrator - University of Free State</span><br>Feb 2025 - Jun 2025</li>
+                                <li><span>Vice-President - Information Technology Student Association_University of Free State</span><br>Feb 2025 - November 2025</li>
+                                <li><span>Computer Lab Assistant - University of Free State</span><br>Feb 2026 - November 2026</li>
+                                <li><span>President - Information Technology Student Association_University of Free State</span><br>Feb 2026 - November 2026</li>
+                               
+                            </ul>
+                        </div>
+                        <div class = "tab-contents" id = "education">
+                            <ul>
+                                <li><span>Bachelor of Science in Information Technology Majoring in Data Science</span><br>Feb 2024 - Present (Final Year)</li>
+                                <!---- <li><span>Data Science Intern at Tech Solutions</span><br>Jun 2024 - Aug 2024</li>---->
+                               
+                            </ul>
+                        </div>
+                </div>
+        </div>
+<!------------------ Services Section ------------------>
+        <div id ="services">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+    <div>
+        <i class="fa-solid fa-chart-column"></i>
+        <h2>Data Visualization</h2>
+        <p>Translating complex datasets into interactive, easy-to-understand visual stories and dashboards to drive business decisions.</p>
+        <a href="#portfolio">See Examples</a>
+    </div>
+    <div>
+        <i class="fa-solid fa-brain"></i>
+        <h2>Predictive Modeling</h2>
+        <p>Designing and deploying machine learning algorithms in Python and R to forecast trends and automate analytical processes.</p>
+        <a href="#portfolio">See Examples</a>
+    </div>
+    <div>
+        <i class="fa-solid fa-magnifying-glass-chart"></i>
+        <h2>Statistical Analysis</h2>
+        <p>Applying rigorous statistical methods and SQL querying to extract actionable insights and diagnose anomalies in raw data.</p>
+        <a href="#portfolio">See Examples</a>
+    </div>
+</div>
+        </div>
+<!---------------- Portfolio Section ------------------>
+        
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Data.png" alt="Project 1">
+                        <div class ="layer">
+                            <h3>Data Visualization - Sales Dashboard</h3>
+                            <p>Interactive dashboard to explore revenue trends, top products, and regional performance with drill-down insights for stakeholders.</p>
+                            <a href="https://github.com/CN-05-PEAK" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="Churn prediction project preview">
+                        <div class ="layer">
+                            <h3>Customer Churn Prediction</h3>
+                            <p>Built a supervised ML model to identify at-risk customers, explain key drivers, and support retention decisions with actionable insights.</p>
+                            <a href="https://github.com/CN-05-PEAK" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="NLP sentiment analysis project preview">
+                        <div class ="layer">
+                            <h3>NLP Sentiment Analysis</h3>
+                            <p>Analyzed customer reviews to classify sentiment and surface recurring themes, supporting product improvements and better customer experience.</p>
+                            <a href="https://github.com/CN-05-PEAK" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-4.png" alt="Time series forecasting project preview">
+                        <div class ="layer">
+                            <h3>Time Series Forecasting</h3>
+                            <p>Forecasted demand/sales using time-series features and model evaluation to help plan inventory and reduce stockouts.</p>
+                            <a href="https://github.com/CN-05-PEAK" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/CN-05-PEAK" class="btn" target="_blank" rel="noopener noreferrer">See More</a>
+            </div>
+        </div>
+<!---------------- Contact Section ------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class = "sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> cosmicneetro@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-square"></i>+27 81 060 9532</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href ="https://www.instagram.com/cosmic_neetro"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="www.linkedin.com/in/thato-ntlati-7b9715323"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/CN-05-PEAK"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/Ntlati T Updated CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                      <form name="submit-to-google-sheet">
+                        <input type="text" name = "Name" placeholder="Your Full Name" required>
+                        <input type="email" name = "Email" placeholder="Your Email" required>
+                        <input type="text" class="text-box" placeholder="Subject">
+                        <textarea name = "Message" rows = "6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                      </form> 
+                      <span id="msg"></span> 
+                    </div>
+                </div>
+            </div>
+            <!--<div class="copyright">
+                <All>Copyright &copy; &nbsp; 2026 Thatos' Story<i class="fa-regular fa-user"></i>.<br> All Rights Reserved.</p>
+            </div>-->
+            <div class="copyright">
+                <p>
+                    Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-coffee"></i> in South Africa.<br>
+                    Copyright &copy; <span id="copyright-year"></span> Thato Ntlati.<br> All Rights Reserved. 
+                
+                </p>
+            </div>
+        </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right ="0";
+            }
+            function closemenu(){
+                sidemenu.style.right ="-200px";
+            } 
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyei0ByQYAdvo9WIU3dPfl8gk-_3-kPHoAtn1u7opVzDpaiRTfyZcjYDKTZp7FQW0WD/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    window.location.href = "thank-you.html";
+                    setTimeout(function(){
+                        msg.innerHTML = "";
+                    },5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+        <script>
+            
+            document.getElementById("copyright-year").textContent = new Date().getFullYear();
+        </script>
+        <script>
+    function transformSkillsToIcons() {
+        const skillIcons = {
+            "C#": "fa-brands fa-microsoft",
+            "Python": "fa-brands fa-python",
+            "R": "fa-brands fa-r-project",
+            "SQL": "fa-solid fa-database",
+            "Machine Learning": "fa-solid fa-brain",
+            "Data Visualization": "fa-solid fa-chart-pie",
+            "Excel": "fa-solid fa-file-excel",
+            "Tableau": "fa-solid fa-table",
+        };
+
+        const skillsContainer = document.querySelector('#skills ul');
+        
+        const style = document.createElement('style');
+        style.innerHTML = `
+            #skills ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); /* Responsive Grid */
+                gap: 20px;
+                padding: 0;
+                justify-content: center; /* Centers the grid itself on the page */
+            }
+            #skills li {
+                background: #262626;
+                padding: 25px 15px;      /* Adjusted padding */
+                border-radius: 10px;
+                
+                /* FLEXBOX CENTERING MAGIC */
+                display: flex;
+                flex-direction: column;
+                align-items: center;     /* Centers items horizontally */
+                justify-content: center; /* Centers items vertically */
+                
+                transition: transform 0.5s, background 0.5s;
+                border: 1px solid rgba(255,255,255,0.1);
+                min-height: 120px;       /* Ensures all boxes are same height */
+            }
+            #skills li:hover {
+                background: #00ddff;
+                transform: translateY(-10px);
+            }
+            #skills li:hover span, #skills li:hover i {
+                color: #080808;
+            }
+            #skills i {
+                font-size: 40px;
+                color: #00ddff;
+                margin-bottom: 15px;
+            }
+            #skills span {
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;      /* Ensures multi-line text is centered */
+            }
+            #skills li small {
+                display: none; 
+            }
+        `;
+        document.head.appendChild(style);
+
+        if (skillsContainer) {
+            const listItems = skillsContainer.querySelectorAll('li');
+            listItems.forEach(item => {
+                const skillNameSpan = item.querySelector('span');
+                if (skillNameSpan) {
+                    const skillName = skillNameSpan.textContent.trim();
+                    const iconClass = skillIcons[skillName] || "fa-solid fa-check-circle";
+
+                    item.innerHTML = `
+                        <i class="${iconClass}"></i>
+                        <span>${skillName}</span>
+                    `;
+                }
+            });
+        }
+    }
+
+    transformSkillsToIcons();
+</script>
+    </body>
+    </html>  
