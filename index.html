@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thato Ntlati — Data Science student building predictive models, dashboards, and data-driven solutions from South Africa.">
+    <title>Thato Ntlati | Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/c676e092c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--cyan" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--violet" aria-hidden="true"></div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#header" class="logo-link">
+                    <img src="images/logo1.png" class="logo" alt="Thato Ntlati logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Expertise</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark close-icon" onclick="closemenu()"></i>
+                </ul>
+                <a href="#contact" class="btn btn-nav">Let's Talk</a>
+                <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="hero">
+                <div class="hero-text reveal">
+                    <p class="eyebrow"><span class="pulse-dot"></span> Final-year Data Science student · UFS</p>
+                    <h1>Turning raw data into <span>decisions that matter</span></h1>
+                    <p class="hero-subtitle">
+                        I build predictive models, analytical dashboards, and statistical pipelines
+                        that help teams see patterns, reduce risk, and act with confidence.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">Explore Projects</a>
+                        <a href="https://github.com/CN-05-PEAK" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <strong>6+</strong>
+                            <span>Core tools</span>
+                        </div>
+                        <div class="stat">
+                            <strong>4</strong>
+                            <span>Public repos</span>
+                        </div>
+                        <div class="stat">
+                            <strong>UFS</strong>
+                            <span>BSc IT · Data Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal" aria-hidden="true">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <span></span><span></span><span></span>
+                            <p>analysis_pipeline.py</p>
+                        </div>
+                        <pre class="terminal-body"><code><span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd
+<span class="code-keyword">from</span> sklearn.model_selection <span class="code-keyword">import</span> train_test_split
+
+df = pd.read_sql(<span class="code-string">"SELECT * FROM customers"</span>, conn)
+X_train, X_test, y_train, y_test = train_test_split(
+    features, target, test_size=<span class="code-number">0.2</span>, random_state=<span class="code-number">42</span>
+)
+model.fit(X_train, y_train)
+<span class="code-comment"># accuracy: 0.91 · f1: 0.88 · ready to deploy</span></code></pre>
+                        <div class="mini-chart">
+                            <div class="bar" style="--h: 45%"></div>
+                            <div class="bar" style="--h: 72%"></div>
+                            <div class="bar" style="--h: 58%"></div>
+                            <div class="bar" style="--h: 91%"></div>
+                            <div class="bar" style="--h: 67%"></div>
+                            <div class="bar" style="--h: 84%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 reveal">
+                    <div class="profile-frame">
+                        <img src="images/port.png" alt="Thato Ntlati portrait">
+                        <div class="profile-badge">
+                            <i class="fa-solid fa-location-dot"></i> Bloemfontein, SA
+                        </div>
+                    </div>
+                </div>
+                <div class="about-col-2 reveal">
+                    <p class="section-label">About Me</p>
+                    <h2 class="sub-title">Data storyteller with a builder's mindset</h2>
+                    <p>
+                        I'm Thato Ntlati — a final-year BSc Information Technology student majoring in
+                        Data Science at the University of the Free State. I combine statistical rigour
+                        with clean engineering to turn messy datasets into models, dashboards, and
+                        narratives that stakeholders can actually use.
+                    </p>
+                    <p>
+                        Beyond coursework, I lead the IT Student Association, assist in computer labs,
+                        and ship real projects — from algorithmic apps to this portfolio you're viewing now.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="skills-grid">
+                            <li><i class="fa-brands fa-python"></i><span>Python</span></li>
+                            <li><i class="fa-brands fa-r-project"></i><span>R</span></li>
+                            <li><i class="fa-solid fa-database"></i><span>SQL</span></li>
+                            <li><i class="fa-brands fa-microsoft"></i><span>C#</span></li>
+                            <li><i class="fa-solid fa-brain"></i><span>Machine Learning</span></li>
+                            <li><i class="fa-solid fa-chart-line"></i><span>Data Visualization</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul class="timeline">
+                            <li>
+                                <span>President — IT Student Association, UFS</span>
+                                <small>Feb 2026 – Nov 2026</small>
+                            </li>
+                            <li>
+                                <span>Computer Lab Assistant — UFS</span>
+                                <small>Feb 2026 – Nov 2026</small>
+                            </li>
+                            <li>
+                                <span>Vice-President — IT Student Association, UFS</span>
+                                <small>Feb 2025 – Nov 2025</small>
+                            </li>
+                            <li>
+                                <span>Computer Lab Assistant — UFS</span>
+                                <small>Feb 2025 – Nov 2025</small>
+                            </li>
+                            <li>
+                                <span>Computer Hardware Demonstrator — UFS</span>
+                                <small>Feb 2025 – Jun 2025</small>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul class="timeline">
+                            <li>
+                                <span>BSc Information Technology — Data Science Major</span>
+                                <small>University of the Free State · Feb 2024 – Present</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="section-label">What I Do</p>
+                <h2 class="sub-title">Expertise across the data lifecycle</h2>
+            </div>
+            <div class="services-list">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+                    <h3>Data Visualization</h3>
+                    <p>Interactive dashboards and visual narratives that make complex trends obvious at a glance.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Predictive Modeling</h3>
+                    <p>End-to-end ML pipelines — from feature engineering to model evaluation and deployment readiness.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>Statistical Analysis</h3>
+                    <p>Hypothesis testing, anomaly detection, and SQL-driven exploration to surface actionable insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="section-label">Portfolio</p>
+                <h2 class="sub-title">Selected work</h2>
+                <p class="section-desc">Academic data science projects alongside shipped applications — each card links to the real source.</p>
+            </div>
+
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all" type="button">All</button>
+                <button class="filter-btn" data-filter="data-science" type="button">Data Science</button>
+                <button class="filter-btn" data-filter="development" type="button">Development</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card reveal" data-category="data-science">
+                    <div class="project-preview preview-dashboard" aria-hidden="true">
+                        <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="320" height="180" fill="url(#dashBg)"/>
+                            <rect x="20" y="24" width="80" height="12" rx="4" fill="rgba(0,221,255,0.5)"/>
+                            <rect x="20" y="50" width="130" height="100" rx="8" fill="rgba(255,255,255,0.06)"/>
+                            <rect x="30" y="110" width="18" height="30" rx="3" fill="#00ddff"/>
+                            <rect x="54" y="90" width="18" height="50" rx="3" fill="#00ddff" opacity="0.7"/>
+                            <rect x="78" y="75" width="18" height="65" rx="3" fill="#00ddff"/>
+                            <rect x="102" y="95" width="18" height="45" rx="3" fill="#00ddff" opacity="0.8"/>
+                            <polyline points="170,130 200,95 230,110 260,70 290,85" fill="none" stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="260" cy="70" r="5" fill="#a78bfa"/>
+                            <defs>
+                                <linearGradient id="dashBg" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#0d1b2a"/>
+                                    <stop offset="100%" stop-color="#1b263b"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="badge badge-academic">University Project</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Pandas</span>
+                        </div>
+                        <h3>Sales Analytics Dashboard</h3>
+                        <p>Exploratory analysis and interactive visualizations of retail sales — revenue trends, regional breakdowns, and product performance.</p>
+                        <p class="project-note"><i class="fa-solid fa-circle-info"></i> Coursework project — repository coming soon to GitHub.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="data-science">
+                    <div class="project-preview preview-churn" aria-hidden="true">
+                        <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="320" height="180" fill="url(#churnBg)"/>
+                            <text x="24" y="36" fill="rgba(255,255,255,0.5)" font-size="11" font-family="monospace">CONFUSION MATRIX</text>
+                            <rect x="60" y="55" width="70" height="50" rx="6" fill="rgba(0,221,255,0.15)" stroke="#00ddff"/>
+                            <rect x="140" y="55" width="70" height="50" rx="6" fill="rgba(255,107,107,0.15)" stroke="#ff6b6b"/>
+                            <rect x="60" y="115" width="70" height="50" rx="6" fill="rgba(255,107,107,0.1)" stroke="#ff6b6b" opacity="0.6"/>
+                            <rect x="140" y="115" width="70" height="50" rx="6" fill="rgba(0,221,255,0.25)" stroke="#00ddff"/>
+                            <text x="82" y="88" fill="#00ddff" font-size="20" font-weight="bold">847</text>
+                            <text x="158" y="88" fill="#ff6b6b" font-size="20" font-weight="bold">63</text>
+                            <text x="82" y="148" fill="#ff6b6b" font-size="20" font-weight="bold" opacity="0.7">41</text>
+                            <text x="152" y="148" fill="#00ddff" font-size="20" font-weight="bold">312</text>
+                            <text x="230" y="90" fill="rgba(255,255,255,0.6)" font-size="12">F1: 0.88</text>
+                            <text x="230" y="110" fill="rgba(255,255,255,0.6)" font-size="12">AUC: 0.93</text>
+                            <defs>
+                                <linearGradient id="churnBg" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#1a0a2e"/>
+                                    <stop offset="100%" stop-color="#16213e"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="badge badge-academic">University Project</span>
+                            <span class="badge">Scikit-learn</span>
+                            <span class="badge">XGBoost</span>
+                        </div>
+                        <h3>Customer Churn Prediction</h3>
+                        <p>Supervised classification model identifying at-risk subscribers with feature importance analysis to guide retention strategy.</p>
+                        <p class="project-note"><i class="fa-solid fa-circle-info"></i> Coursework project — repository coming soon to GitHub.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="data-science">
+                    <div class="project-preview preview-nlp" aria-hidden="true">
+                        <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="320" height="180" fill="url(#nlpBg)"/>
+                            <text x="30" y="50" fill="#00ddff" font-size="22" opacity="0.9">great</text>
+                            <text x="110" y="70" fill="#a78bfa" font-size="16" opacity="0.7">product</text>
+                            <text x="200" y="45" fill="#00ddff" font-size="18">love</text>
+                            <text x="50" y="100" fill="#ff6b6b" font-size="20" opacity="0.8">terrible</text>
+                            <text x="160" y="115" fill="#00ddff" font-size="14">amazing</text>
+                            <text x="240" y="95" fill="#a78bfa" font-size="24">fast</text>
+                            <rect x="24" y="135" width="90" height="28" rx="14" fill="rgba(0,221,255,0.2)" stroke="#00ddff"/>
+                            <text x="42" y="154" fill="#00ddff" font-size="12">Positive 72%</text>
+                            <rect x="130" y="135" width="80" height="28" rx="14" fill="rgba(255,107,107,0.15)" stroke="#ff6b6b"/>
+                            <text x="148" y="154" fill="#ff6b6b" font-size="12">Neg 18%</text>
+                            <defs>
+                                <linearGradient id="nlpBg" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#0f2027"/>
+                                    <stop offset="100%" stop-color="#203a43"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="badge badge-academic">University Project</span>
+                            <span class="badge">NLTK</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3>NLP Sentiment Analysis</h3>
+                        <p>Text classification pipeline on customer reviews — sentiment scoring, topic extraction, and word-frequency visualizations.</p>
+                        <p class="project-note"><i class="fa-solid fa-circle-info"></i> Coursework project — repository coming soon to GitHub.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="development">
+                    <div class="project-preview preview-sudoku" aria-hidden="true">
+                        <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="320" height="180" fill="url(#sudokuBg)"/>
+                            <rect x="70" y="20" width="180" height="140" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(0,221,255,0.4)" stroke-width="2"/>
+                            <line x1="130" y1="20" x2="130" y2="160" stroke="rgba(0,221,255,0.3)" stroke-width="2"/>
+                            <line x1="190" y1="20" x2="190" y2="160" stroke="rgba(0,221,255,0.3)" stroke-width="2"/>
+                            <line x1="70" y1="67" x2="250" y2="67" stroke="rgba(0,221,255,0.3)" stroke-width="2"/>
+                            <line x1="70" y1="113" x2="250" y2="113" stroke="rgba(0,221,255,0.3)" stroke-width="2"/>
+                            <text x="92" y="55" fill="#fff" font-size="18" font-family="monospace">5</text>
+                            <text x="152" y="55" fill="#00ddff" font-size="18" font-family="monospace">3</text>
+                            <text x="212" y="102" fill="#fff" font-size="18" font-family="monospace">8</text>
+                            <text x="92" y="148" fill="#a78bfa" font-size="18" font-family="monospace">9</text>
+                            <defs>
+                                <linearGradient id="sudokuBg" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#0a0a0a"/>
+                                    <stop offset="100%" stop-color="#1a1a2e"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="badge badge-live">Live on GitHub</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Algorithms</span>
+                        </div>
+                        <h3>Pro Sudoku Master</h3>
+                        <p>Full-featured Sudoku with backtracking puzzle generation, dark mode, note-taking, and responsive design — built in vanilla JS.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/CN-05-PEAK/Sudoku-game" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="development">
+                    <div class="project-preview preview-portfolio" aria-hidden="true">
+                        <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="320" height="180" fill="url(#portBg)"/>
+                            <rect x="30" y="24" width="260" height="24" rx="6" fill="rgba(255,255,255,0.08)"/>
+                            <circle cx="46" cy="36" r="5" fill="#ff6b6b"/>
+                            <circle cx="62" cy="36" r="5" fill="#ffd93d"/>
+                            <circle cx="78" cy="36" r="5" fill="#6bcb77"/>
+                            <rect x="30" y="60" width="80" height="96" rx="6" fill="rgba(0,221,255,0.1)" stroke="rgba(0,221,255,0.3)"/>
+                            <rect x="120" y="60" width="170" height="20" rx="4" fill="rgba(255,255,255,0.1)"/>
+                            <rect x="120" y="90" width="130" height="10" rx="3" fill="rgba(255,255,255,0.06)"/>
+                            <rect x="120" y="108" width="150" height="10" rx="3" fill="rgba(255,255,255,0.06)"/>
+                            <rect x="120" y="126" width="90" height="24" rx="6" fill="#00ddff" opacity="0.8"/>
+                            <defs>
+                                <linearGradient id="portBg" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#080808"/>
+                                    <stop offset="100%" stop-color="#1b1b2f"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="badge badge-live">Live on GitHub Pages</span>
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                        </div>
+                        <h3>Personal Portfolio</h3>
+                        <p>This site — a responsive, accessible portfolio deployed via GitHub Pages with contact form integration and modern UI.</p>
+                        <div class="project-links">
+                            <a href="https://cn-05-peak.github.io/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site
+                            </a>
+                            <a href="https://github.com/CN-05-PEAK/CN-05-PEAK.github.io" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="portfolio-cta reveal">
+                <p>More projects and notebooks are on the way as I publish coursework repos.</p>
+                <a href="https://github.com/CN-05-PEAK" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left reveal">
+                    <p class="section-label">Get In Touch</p>
+                    <h2 class="sub-title">Let's build something with data</h2>
+                    <p class="contact-intro">Open to internships, collaborations, and data science opportunities.</p>
+                    <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:cosmicneetro@gmail.com">cosmicneetro@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+27810609532">+27 81 060 9532</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/cosmic_neetro" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/thato-ntlati-7b9715323" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/CN-05-PEAK" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Ntlati T Updated CV.pdf" download class="btn btn-primary">Download CV</a>
+                </div>
+                <div class="contact-right reveal">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Full Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <label for="subject" class="visually-hidden">Subject</label>
+                        <input type="text" id="subject" name="Subject" placeholder="Subject">
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <footer class="copyright">
+            <p>
+                Made with <i class="fa-solid fa-heart"></i> in South Africa ·
+                Copyright &copy; <span id="copyright-year"></span> Thato Ntlati
+            </p>
+        </footer>
+    </section>
+
+    <script src="scripts/main.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Thato Ntlati",
+        "jobTitle": "Data Science Student",
+        "url": "https://cn-05-peak.github.io/",
+        "sameAs": [
+            "https://github.com/CN-05-PEAK",
+            "https://www.linkedin.com/in/thato-ntlati-7b9715323",
+            "https://www.instagram.com/cosmic_neetro"
+        ]
+    }
+    </script>
+</body>
+</html>
